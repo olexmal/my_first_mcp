@@ -1,0 +1,25 @@
+{
+  "name": "my-first-mcp",
+  "version": "0.1.0",
+  "packageManager": "pnpm@10.15.1",
+  "private": true,
+  "scripts": {
+    "build": "tsc -p .",
+    "start": "node dist/server.js",
+    "dev": "ts-node src/index.ts",
+    "dev:server": "ts-node-dev --respawn --transpile-only src/server.ts",
+    "serve": "node dist/server.js"
+  },
+  "dependencies": {
+    "cors": "latest",
+    "express": "latest"
+  },
+  "devDependencies": {
+    "@types/cors": "latest",
+    "@types/express": "latest",
+    "@types/node": "latest",
+    "ts-node": "latest",
+    "ts-node-dev": "latest",
+    "typescript": "latest"
+  }
+}
